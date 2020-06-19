@@ -10,7 +10,8 @@ Out loud.<br>
 kind of mistake you made.</b><br>
 Yep.<br>
 <br>
-<li><b> When you go to the next exercise, look at the last mistakes you made and try not to make them in this new one.</b><br>
+<li><b> When you go to the next exercise, look at the last mistakes you made and<br>
+try not to make them in this new one.</b><br>
 Definitely<br>
 <br>
 <li><b> Remember that everyone makes mistakes. Programmers are like magicians who<br>
