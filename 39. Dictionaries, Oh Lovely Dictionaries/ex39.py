@@ -27,3 +27,26 @@ print('OR State has: ', cities['OR'])
 print('-' * 10)
 print("Michigan's abbreviation is: ", states['Michigan'])
 print("Florida's abbreviation is: ", states['Florida'])
+
+# do it by using the state then cities dict
+print('-' * 10)
+print("Michigan has: ", cities[states['Michigan']])
+print("Florida has: ", cities[states['Florida']])
+
+# print every state abbreviation
+print('-' * 10)
+for state, abbrev in state.items():
+    print("%s is abbreviated %s" % (state, abbrev))
+
+# print every city in state
+print('-' * 10)
+for abbrev, city in city.items():
+    print("%s has the city %s" % (abbrev, city))
+
+# now do both at the same time
+print('-' * 10)
+for state, abbrev in state.items():
+    print("%s state is abbreviated %s and has city %s" % (
+        state, abbrev, cities[abbrev]))
+
+print('-' * 10)
