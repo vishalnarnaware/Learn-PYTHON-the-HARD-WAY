@@ -15,7 +15,7 @@ sentences for them:
 In each of these where you see X, Y, M, J, K, Q, and foo, you can treat  
 those like blank spots. For example, I can also write these sentences as follows:  
 1. “Make a class named ??? that is- a Y.”
-2. “class ??? has- a __init__ that takes self and ??? parameters.”
+2. “class ??? has- a \__init__ that takes self and ??? parameters.”
 3. “class ??? has- a function named ??? that takes self and ??? parameters.”
 4. “Set foo to an instance of class ???.”
 5. “From foo get the ??? function, and call it with self=??? and parameters ???.”
