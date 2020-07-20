@@ -15,7 +15,39 @@ PHRASES = {
     "*** = %%%()":
         "Set *** to an instance of class %%%.",
     "***.***(@@@)":
-        "From *** get the *** function, and call it with parameters self, @@@.", 
+        "From *** get the *** function, and call it with parameters self, @@@.",
     "***.*** = '***'":
         "From *** get the *** attribute and set it to '***'."
 }
+
+# do they want to drill phrases first
+PHRASE_FIRST = False
+if len(sys.argv) == 2 and sys.argv[1] == 'english':
+    PHRASE_FIRST = True
+
+# load up the words from the website
+for word in urlopen(WORD_URL).readlines():
+    WORDS.append(word.strip())
+
+
+def convert(snippet, phrase):
+    None
+
+# keep going until they hit CTRL-D or CTRL-Z
+try:
+    while True:
+        snippets = PHRASES.keys()
+        random.shuffle(snippets)
+
+        for snippet in snippets:
+            phrase = PHRASES[snippet]
+            question, answer = convert(snippet, phrase)
+            if PHRASE_FIRST:
+                question, answer = answer, question
+
+            print(question)
+
+            input("> ")
+            print("ANSWER:  %s\n\n" % answer)
+except EOFError:
+    print("\nBye")
