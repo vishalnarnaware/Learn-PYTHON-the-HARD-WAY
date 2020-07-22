@@ -41,6 +41,13 @@ def convert(snippet, phrase):
         param_counts = random.randint(1, 3)
         param_names.append(', '.join(random.sample(WORDS, param_counts)))
 
+    for sentence in snippet, phrase:
+        result = sentence[:]
+
+        # fake class names
+        for word in class_names:
+            result = result.replace("%%%", word, 1)
+
 # keep going until they hit CTRL-D or CTRL-Z
 try:
     while True:
