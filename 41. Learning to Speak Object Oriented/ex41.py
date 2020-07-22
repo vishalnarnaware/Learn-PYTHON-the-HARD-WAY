@@ -48,6 +48,10 @@ def convert(snippet, phrase):
         for word in class_names:
             result = result.replace("%%%", word, 1)
 
+        # fake other names
+        for word in other_names:
+            result = result.replace("***", word, 1)
+
 # keep going until they hit CTRL-D or CTRL-Z
 try:
     while True:
