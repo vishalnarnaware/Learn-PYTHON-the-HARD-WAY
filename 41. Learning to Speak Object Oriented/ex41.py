@@ -27,10 +27,11 @@ if len(sys.argv) == 2 and sys.argv[1] == 'english':
 
 # load up the words from the website
 manager = PoolManager()
-for word in manager.urlopen(url = "http://learncodethehardway.org/words.txt").readlines():
+for word in manager.urlopen('GET', url = "http://learncodethehardway.org/words.txt").readlines():
     WORDS.append(word.strip())
 
-
+print(WORDS)
+'''
 def convert(snippet, phrase):
     class_names = [w.capitalize() for w in
                     random.sample(WORDS, snippet.count("%%%"))]
@@ -79,3 +80,4 @@ try:
             print("ANSWER:  %s\n\n" % answer)
 except EOFError:
     print("\nBye")
+'''
