@@ -27,7 +27,7 @@ if len(sys.argv) == 2 and sys.argv[1] == 'english':
 
 # load up the words from the website
 for word in urllib.request.urlopen("http://learncodethehardway.org/words.txt").readlines():
-    WORDS.append(word.strip())
+    WORDS.append(word.strip().decode('utf-8'))
 
 
 def convert(snippet, phrase):
