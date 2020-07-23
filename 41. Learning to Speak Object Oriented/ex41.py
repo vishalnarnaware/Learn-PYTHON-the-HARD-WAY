@@ -1,5 +1,5 @@
 import random
-from urllib3 import PoolManager
+import urllib.request
 import sys
 
 WORD_URL = "http://learncodethehardway.org/words.txt"
@@ -26,8 +26,7 @@ if len(sys.argv) == 2 and sys.argv[1] == 'english':
     PHRASE_FIRST = True
 
 # load up the words from the website
-manager = PoolManager()
-for word in manager.urlopen('GET', url = "http://learncodethehardway.org/words.txt").readlines():
+for word in urllib.request.urlopen("http://learncodethehardway.org/words.txt").readlines():
     WORDS.append(word.strip())
 
 print(WORDS)
