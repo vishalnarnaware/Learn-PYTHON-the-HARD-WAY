@@ -29,8 +29,7 @@ if len(sys.argv) == 2 and sys.argv[1] == 'english':
 for word in urllib.request.urlopen("http://learncodethehardway.org/words.txt").readlines():
     WORDS.append(word.strip())
 
-print(WORDS)
-'''
+
 def convert(snippet, phrase):
     class_names = [w.capitalize() for w in
                     random.sample(WORDS, snippet.count("%%%"))]
@@ -64,7 +63,7 @@ def convert(snippet, phrase):
 # keep going until they hit CTRL-D or CTRL-Z
 try:
     while True:
-        snippets = PHRASES.keys()
+        snippets = list(PHRASES.keys())
         random.shuffle(snippets)
 
         for snippet in snippets:
@@ -79,4 +78,3 @@ try:
             print("ANSWER:  %s\n\n" % answer)
 except EOFError:
     print("\nBye")
-'''
