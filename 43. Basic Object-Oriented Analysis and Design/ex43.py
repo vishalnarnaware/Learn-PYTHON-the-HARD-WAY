@@ -29,4 +29,18 @@ class Death(Scene):
 
     def enter(self):
         print(Death.quips[randint(0, len(self.quips)-1)])
-        exit(1) 
+        exit(1)
+
+class CentralCorridor(Scene):
+
+    def enter(self):
+        print ("The Gothons of Planet Percal #25 have invaded your ship and destroyed")
+        print ("your entire crew. You are the last surviving member and your last")
+        print ("mission is to get the neutron destruct bomb from the Weapons Armory,")
+        print ("put it in the bridge, and blow the ship up after getting into an ")
+        print ("escape pod.")
+        print ("\n")
+        print ("You're running down the central corridor to the Weapons Armory when")
+        print ("a Gothon jumps out, red scaly skin, dark grimy teeth, and evil clown costume")
+        print ("flowing around his hate filled body. He's blocking")
+        print ("Armory and about to pull a weapon to blast you.")
