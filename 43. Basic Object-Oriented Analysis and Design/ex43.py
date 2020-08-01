@@ -19,3 +19,14 @@ class Engine(object):
             print("\n--------")
             next_scene_name = current_scene.enter()
             current_scene = self.scene_map.next_scene(next_scene_name)
+
+class Death(Scene):
+
+    quips = ["You died. You kinda suck at this.",
+             "Your mom would be proud...if she were smarter.",
+             "Such a luser."
+             "I have a small puppy that's better at this."]
+
+    def enter(self):
+        print(Death.quips[randint(0, len(self.quips)-1)])
+        exit(1) 
