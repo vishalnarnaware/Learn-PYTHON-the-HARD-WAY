@@ -180,11 +180,11 @@ class EscapePod(Scene):
 
 class Map(object):
 
-    scenes = ['central_corridor': CentralCorridor(),
+    scenes = {'central_corridor': CentralCorridor(),
               'laser_weapon_armory': LaserWeaponArmory(),
               'the_bridge': TheBridge(),
               'escape_pod': EscapePod(),
-              'death': Death()]
+              'death': Death()}
 
     def __init__(self, start_scene):
         self.start_scene = start_scene
