@@ -108,3 +108,16 @@ class LaserWeaponArmory(Scene):
             print("You decide to sit there, and finally the Gothons blow up the")
             print("ship from their ship and you die.")
             return 'death'
+
+
+class TheBridge(Scene):
+
+    def enter(self):
+        print("You burst onto the Bridge with the neutron destruct bomb")
+        print("under your arm and surprise 5 Gothons who are trying to")
+        print("take control of the ship. Each of them has an even uglier")
+        print("clown costume than the last. They haven't pulled their")
+        print("weapons out yet, as they see the active bomb under your")
+        print("arm and don't want to set it off.")
+
+        
