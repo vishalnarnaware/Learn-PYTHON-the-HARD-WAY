@@ -5,6 +5,7 @@
 Click [here](Word_Drills.md) to see Word Drills file.  
 
 ### Phrase Drills   
-Click [here](Phrase_Drills.md) to see Phrase Drills file.
+Click [here](Phrase_Drills.md) to see Phrase Drills file.   
 
-### Combined Drills
+### Combined Drill
+Click [here](Combined_Drill.md) to see Combined Drill file.
